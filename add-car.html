@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أضف سيارتك - سوق سوريا للسيارات</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>أضف سيارتك</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="addCar.html" class="active">أضف سيارتك</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="add-car-form">
+      <form action="submit-car.php" method="POST">
+        <label for="carName">اسم السيارة:</label>
+        <input type="text" id="carName" name="carName" required>
+
+        <label for="carType">نوع السيارة:</label>
+        <select name="carType" id="carType" required>
+          <option value="">اختر النوع</option>
+          <option value="سيدان">سيدان</option>
+          <option value="هاتشباك">هاتشباك</option>
+          <option value="SUV">SUV</option>
+          <option value="بيك أب">بيك أب</option>
+        </select>
+
+        <label for="fuelType">نوع الوقود:</label>
+        <select name="fuelType" id="fuelType" required>
+          <option value="">اختر الوقود</option>
+          <option value="بنزين">بنزين</option>
+          <option value="ديزل">ديزل</option>
+          <option value="كهرباء">كهرباء</option>
+          <option value="هجين">هجين</option>
+        </select>
+
+        <label for="price">السعر (بالليرة السورية):</label>
+        <input type="number" id="price" name="price" required>
+
+        <label for="image">رابط صورة السيارة:</label>
+        <input type="url" id="image" name="image" placeholder="ضع رابط صورة السيارة" required>
+
+        <button type="submit">نشر السيارة</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; Souq Syria Cars</p>
+  </footer>
+</body>
+</html>

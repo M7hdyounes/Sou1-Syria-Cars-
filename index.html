@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>سوق سوريا للسيارات</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>سوق سوريا للسيارات</h1>
+    <nav>
+      <a href="index.html">الرئيسية</a>
+      <a href="addCar.html">أضف سيارتك</a>
+      <a href="contact.html">اتصل بنا</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <h2>ابحث عن سيارة</h2>
+      <form action="search.html" method="GET">
+        <input type="text" name="model" placeholder="نوع السيارة أو الموديل" required>
+        <select name="fuel_type" required>
+          <option value="">اختر نوع الوقود</option>
+          <option value="بنزين">بنزين</option>
+          <option value="ديزل">ديزل</option>
+          <option value="كهرباء">كهرباء</option>
+          <option value="هجين">هجين</option>
+        </select>
+        <button type="submit">بحث</button>
+      </form>
+    </section>
+
+    <section class="featured-cars">
+      <h2>أحدث السيارات المضافة</h2>
+      <p>سيتم عرض السيارات هنا عند الإضافة.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>جميع الحقوق محفوظة &copy; Souq Syria Cars</p>
+  </footer>
+</body>
+</html>
